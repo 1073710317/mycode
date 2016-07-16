@@ -10,7 +10,7 @@
  * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
  * @date 2016/07/16 15:17:19
  * @version $Revision$ 
- * @brief 一个没有实现异常安全的实例
+ * @brief 一个确保异常安全的实例
  *  
  **/
 
@@ -22,10 +22,7 @@
 class CSubClass {
 public:
     CSubClass() {
-        // terminate called after throwing an instance of 'std::runtime_error'
-        // what():  runtime error from CSubClass()
-        //   Aborted
-        throw std::runtime_error("runtime error from CSubClass()"); // 事实上此处抛出异常后，由于没有找到对应的catch，程序将会终止，如上面所示
+        throw std::runtime_error("runtime error from CSubClass()"); // 将会被catch捕获
     }
 };
 
@@ -68,8 +65,15 @@ void CClass::do_something() {
     
     // do something
 
-    delete _p_data;
-    _p_data = new CSubClass();      // 假如此处抛出异常，会导致两个问题：1：m_mutex将永远不会被unlock 2：_p_data将成为野指针
+    try {
+        delete _p_data;
+        _p_data = new CSubClass();      // 假如此处抛出异常，会导致两个问题：1：m_mutex将永远不会被unlock 2：_p_data将成为野指针
+    } catch (const std::runtime_error& re) {
+        std::cerr << re.what() << std::endl;
+        unlock(_p_mutex);
+        _p_data = NULL;
+        return;
+    }
 
     unlock(_p_mutex);
 }

@@ -10,7 +10,7 @@
  * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
  * @date 2016/07/16 15:17:19
  * @version $Revision$ 
- * @brief 一个没有实现异常安全的实例
+ * @brief 使用对象来管理锁，实现异常安全
  *  
  **/
 
@@ -30,16 +30,30 @@ public:
 };
 
 class CMutex {
+public:
+    void lock() {
+        std::cout << "lock." << std::endl;
+    }
 
+    void unlock() {
+        std::cout << "unlock." << std::endl;
+    }
 };
 
-void lock(CMutex mutex) {
-    std::cout << "lock." << std::endl;
-}
+class CLock {
+public:
+    explicit CLock(CMutex& lock1) : m_lock(lock1) {
+        m_lock.lock();
+    }
 
-void unlock(CMutex mutex) {
-    std::cout << "unlock." << std::endl;
-}
+    // 程序终止了，这个函数并没有得到调用，为什么？
+    ~CLock() {
+        m_lock.unlock();
+    }
+
+private:
+    CMutex& m_lock;
+};
 
 // CClass应用在多线程环境中，即会有多个线程操作CClass的实例
 class CClass {
@@ -64,14 +78,11 @@ CClass::~CClass() {
 }
 
 void CClass::do_something() {
-    lock(_p_mutex);
-    
+    CLock clock(_p_mutex);
     // do something
 
     delete _p_data;
     _p_data = new CSubClass();      // 假如此处抛出异常，会导致两个问题：1：m_mutex将永远不会被unlock 2：_p_data将成为野指针
-
-    unlock(_p_mutex);
 }
 
 int main() {
