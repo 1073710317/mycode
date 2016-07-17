@@ -1,2 +1,3 @@
 关于c++中模板/泛型编程中的一些示例
 function_template.cpp：一个函数模板的示例
+queue_use_template.cpp：一个通过模板自己实现的Queue
