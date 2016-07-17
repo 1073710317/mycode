@@ -22,10 +22,7 @@
 class CSubClass {
 public:
     CSubClass() {
-        // terminate called after throwing an instance of 'std::runtime_error'
-        // what():  runtime error from CSubClass()
-        //   Aborted
-        throw std::runtime_error("runtime error from CSubClass()"); // 事实上此处抛出异常后，由于没有找到对应的catch，程序将会终止，如上面所示
+
     }
 };
 
@@ -46,7 +43,6 @@ public:
         m_lock.lock();
     }
 
-    // 程序终止了，因此这个函数并没有得到调用？为什么？
     ~CLock() {
         m_lock.unlock();
     }
@@ -78,7 +74,7 @@ CClass::~CClass() {
 }
 
 void CClass::do_something() {
-    CLock clock(_p_mutex);
+    CLock clock(_p_mutex);  // 函数执行结束后，会自动调用CLock的析构函数，进行释放锁的操作
     // do something
 
     delete _p_data;
