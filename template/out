@@ -1,0 +1,50 @@
+index_template.cpp:26:1: 错误： ‘ostream’不是一个类型名
+index_template.cpp: 在成员函数‘int IndexEngine<key_type, value_type>::to_string() [with key_type = std::basic_string<char>, value_type = _val1]’中:
+index_template.cpp:63:22：从此处实例化
+index_template.cpp:39:13: 错误： ‘operator<<’在‘std::cout << it.std::_Rb_tree_iterator<_Tp>::operator-> [with _Tp = std::pair<const std::basic_string<char>, _val1>, std::_Rb_tree_iterator<_Tp>::pointer = std::pair<const std::basic_string<char>, _val1>*]()->std::pair<const std::basic_string<char>, _val1>::second’中没有匹配
+index_template.cpp:39:13: 附注： 备选是：
+/usr/include/c++/4.6/ostream:110:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:110:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.6/ostream:119:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>, std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+/usr/include/c++/4.6/ostream:119:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.6/ostream:129:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:129:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.6/ostream:167:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:167:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘long int’
+/usr/include/c++/4.6/ostream:171:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:171:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘long unsigned int’
+/usr/include/c++/4.6/ostream:175:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:175:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘bool’
+/usr/include/c++/4.6/bits/ostream.tcc:93:5: 附注： std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char, _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:93:5: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘short int’
+/usr/include/c++/4.6/ostream:182:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:182:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘short unsigned int’
+/usr/include/c++/4.6/bits/ostream.tcc:107:5: 附注： std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char, _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:107:5: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘int’
+/usr/include/c++/4.6/ostream:193:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:193:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘unsigned int’
+/usr/include/c++/4.6/ostream:202:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:202:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘long long int’
+/usr/include/c++/4.6/ostream:206:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:206:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘long long unsigned int’
+/usr/include/c++/4.6/ostream:211:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:211:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘double’
+/usr/include/c++/4.6/ostream:215:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:215:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘float’
+/usr/include/c++/4.6/ostream:223:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:223:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘long double’
+/usr/include/c++/4.6/ostream:227:7: 附注： std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:227:7: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘const void*’
+/usr/include/c++/4.6/bits/ostream.tcc:121:5: 附注： std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:121:5: 附注：   no known conversion for argument 1 from ‘_val1’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+/usr/include/c++/4.6/ostream:528:5: 附注： template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+/usr/include/c++/4.6/ostream:523:5: 附注： template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+/usr/include/c++/4.6/ostream:510:5: 附注： template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+/usr/include/c++/4.6/bits/ostream.tcc:323:5: 附注： template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+/usr/include/c++/4.6/ostream:493:5: 附注： template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+/usr/include/c++/4.6/ostream:473:5: 附注： template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+/usr/include/c++/4.6/ostream:468:5: 附注： template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+/usr/include/c++/4.6/ostream:462:5: 附注： template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+/usr/include/c++/4.6/ostream:456:5: 附注： template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+/usr/include/c++/4.6/ostream:451:5: 附注： template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+/usr/include/c++/4.6/bits/basic_string.h:2693:5: 附注： template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
