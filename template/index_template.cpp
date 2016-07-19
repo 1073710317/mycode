@@ -49,8 +49,8 @@ int IndexEngine<key_type, value_type>::add(const key_type& key, const value_type
     index[key] = value;
 }
 
-template <class key_type, class value_type>
-using engine_type = std::map<std::string, IndexEngine<key_type, value_type>* >; // 如何存储？
+/*template <class key_type, class value_type>
+using engine_type = std::map<std::string, IndexEngine<key_type, value_type>* >; // 如何存储？*/
 
 int main() {
     IndexEngine<std::string, val1> index1;

@@ -1,0 +1,1 @@
+leveldb中cache的实现：可参考：https://github.com/google/leveldb/blob/master/util/cache.cc
