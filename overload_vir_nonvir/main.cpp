@@ -25,8 +25,15 @@ public:
 
 class AP : A {
 public:
-    virtual void fun() {
+    void fun() {
         std::cout << "AP::fun" << std::endl;
+    }
+};
+
+class APP : AP {
+public:
+    void fun() {
+        std::cout << "APP::fun" << std::endl;
     }
 };
 
@@ -49,6 +56,9 @@ int main(int argc, char** argv) {
     a.fun();    // A::fun
     AP ap;  
     ((A*)&ap)->fun(); // AP::fun 
+
+    APP app;  
+    ((A*)&app)->fun(); // APP::fun 
 
     B b;
     b.fun(); // B::fun 
