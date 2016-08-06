@@ -1,0 +1,1 @@
+测试assert失败的情况，调用abort，并收到signal 6（SIGABRT），当ulimit -c允许的时候会core dump
