@@ -8,24 +8,20 @@
  /**
  * @file main.cpp
  * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
- * @date 2016/08/20 11:00:38
+ * @date 2016/08/22 20:34:13
  * @version $Revision$ 
- * @brief 
+ * @brief c/c++中生成随机数
  *  
  **/
-
-#include <stdio.h>
 #include <iostream>
-#include <ctime>
+#include <stdlib.h> 
+#include <time.h>
 
 int main() {
-    time_t t = time(0);   // get time now
-    struct tm * now = localtime( & t );
-    std::cout << (now->tm_year + 1900) << '-'  << (now->tm_mon + 1) << '-' <<  now->tm_mday << std::endl;
-
-    // 测试前面补0
-    printf("%02d-%d\n", now->tm_mon + 1, now->tm_mday);
-
+    srand((unsigned)time(NULL));
+    for (int i = 0; i < 1000000; i++) {
+        std::cout << rand() % 98 << std::endl; 
+    }
     return 0;
 }
 
