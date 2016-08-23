@@ -8,20 +8,16 @@
  /**
  * @file main.cpp
  * @author bjwushaoyun(bjwushaoyun)
- * @date 2016/08/22 20:34:13
+ * @date 2016/08/23 11:51:45
  * @version $Revision$ 
- * @brief c/c++中生成随机数
+ * @brief 
  *  
  **/
+
 #include <iostream>
-#include <stdlib.h> 
-#include <time.h>
 
 int main() {
-    srand((unsigned)time(NULL));
-    for (int i = 0; i < 1000000; i++) {
-        std::cout << rand() % 98 << std::endl; 
-    }
+    std::cout << sizeof(unsigned long long) << std::endl;
     return 0;
 }
 

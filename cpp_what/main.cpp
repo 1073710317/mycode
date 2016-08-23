@@ -7,7 +7,7 @@
  
  /**
  * @file main.cpp
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun)
  * @date 2016/07/29 20:17:45
  * @version $Revision$ 
  * @brief 

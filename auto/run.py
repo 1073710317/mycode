@@ -1,6 +1,6 @@
 #! /bin/env python
 # encoding=utf-8
-# bjwushaoyun@corp.netease.com
+# bjwushaoyun
 ########################################################################
 # 
 # Copyright (c) 2016 163.com, Inc. All Rights Reserved
@@ -9,7 +9,7 @@
  
 '''
 File: run.py
-Author: bjwushaoyun(bjwushaoyun@corp.netease.com)
+Author: bjwushaoyun(bjwushaoyun)
 Date: 2016/08/23 10:39:33
 '''
 

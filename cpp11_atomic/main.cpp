@@ -7,7 +7,7 @@
  
  /**
  * @file main.cpp
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun)
  * @date 2016/07/25 18:33:05
  * @version $Revision$ 
  * @brief c++11中原子操作实例

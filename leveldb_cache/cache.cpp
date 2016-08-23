@@ -7,7 +7,7 @@
  
  /**
  * @file cache.cpp
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun)
  * @date 2016/07/19 13:05:38
  * @version $Revision$ 
  * @brief from leveldb/util/cache.cc: https://github.com/google/leveldb/blob/master/util/cache.cc

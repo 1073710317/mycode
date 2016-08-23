@@ -7,7 +7,7 @@
  
  /**
  * @file factory.cpp
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun)
  * @date 2016/08/18 11:42:59
  * @version $Revision$ 
  * @brief 工厂模式

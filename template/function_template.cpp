@@ -7,7 +7,7 @@
  
  /**
  * @file function_template.cpp
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun)
  * @date 2016/07/17 14:23:51
  * @version $Revision$ 
  * @brief 函数模板示例程序

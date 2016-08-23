@@ -7,7 +7,7 @@
  
  /**
  * @file main.cpp
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun)
  * @date 2016/08/17 21:39:48
  * @version $Revision$ 
  * @brief 用互斥锁替换读写锁的一个例子

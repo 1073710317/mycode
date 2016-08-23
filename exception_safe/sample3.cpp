@@ -7,7 +7,7 @@
  
  /**
  * @file main.cpp
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun)
  * @date 2016/07/16 15:17:19
  * @version $Revision$ 
  * @brief 使用对象来管理锁，实现异常安全

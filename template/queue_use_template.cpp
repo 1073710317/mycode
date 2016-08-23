@@ -7,7 +7,7 @@
  
  /**
  * @file queue_use_template.cpp
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun)
  * @date 2016/07/17 14:37:41
  * @version $Revision$ 
  * @brief 使用template实现自己的queue，参考c++ primer中的讲解
