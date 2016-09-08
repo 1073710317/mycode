@@ -44,13 +44,17 @@ int add(const DetailInfo& detail_info) {
         std::cout << "found it" << std::endl;
         DocVec* cur_vec = index_map[id];
         // 插入到原有vector，并保证有序
-        for (DocVecIt doc_it = cur_vec->begin(); doc_it != cur_vec->end(); ++doc_it) {
+        DocVecIt doc_it;
+        for (doc_it = cur_vec->begin(); doc_it != cur_vec->end(); ++doc_it) {
             double cur_weight = detail_map[*doc_it].weight;
             if (weight > cur_weight) {
                 //cur_vec->push_back(docid);  // 会不会对上面的for循环有影响
                 cur_vec->insert(doc_it, docid);
                 break;
             }
+        }
+        if (doc_it == cur_vec->end()) {
+            cur_vec->insert(doc_it, docid);
         }
     } else {
         std::cout << "no found that" << std::endl;
@@ -97,9 +101,19 @@ int main() {
     add(build_detail_info(1, "docid7", 3.2));
     add(build_detail_info(1, "docid8", 2.12));
     add(build_detail_info(1, "docid9", 1.12));
-    add(build_detail_info(1, "docid10", 8.12));
+    add(build_detail_info(1, "docid10", 0.1));
 
     traverse();
+
+    std::vector<int> test_insert_end;   // 测试insert到end看是否正常
+    test_insert_end.insert(test_insert_end.end(), 1);
+    test_insert_end.insert(test_insert_end.end(), 2);
+    test_insert_end.insert(test_insert_end.end(), 3);
+    std::cout << "test insert to end: ";
+    for (std::vector<int>::const_iterator it = test_insert_end.begin(); it != test_insert_end.end(); ++it) {
+        std::cout << *it << ", ";
+    }
+    std::cout << std::endl;
 
     return 0;
 }
