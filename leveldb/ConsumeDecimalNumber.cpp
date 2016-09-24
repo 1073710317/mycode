@@ -7,7 +7,7 @@
  
  /**
  * @file ConsumeDecimalNumber.cpp
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun@xxoo)
  * @date 2016/09/11 11:20:53
  * @version $Revision$ 
  * @brief util/logging.cc中的ConsumeDecimalNumber函数

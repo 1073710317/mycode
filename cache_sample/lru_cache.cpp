@@ -7,7 +7,7 @@
  
  /**
  * @file lru_cache.cpp
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun@xxoo)
  * @date 2016/08/25 16:29:33
  * @version $Revision$ 
  * @brief 

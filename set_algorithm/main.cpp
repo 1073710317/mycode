@@ -7,7 +7,7 @@
  
  /**
  * @file main.cpp
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun@xxoo)
  * @date 2016/09/01 11:36:57
  * @version $Revision$ 
  * @brief set相关算法使用示例程序

@@ -7,7 +7,7 @@
  
  /**
  * @file lru_cache.h
- * @author bjwushaoyun(bjwushaoyun@corp.netease.com)
+ * @author bjwushaoyun(bjwushaoyun@xxoo)
  * @date 2016/08/25 16:29:19
  * @version $Revision$ 
  * @brief 
